@@ -16,8 +16,6 @@
         
         <Button x:Name="btnLogin"
                 Text="Login"
-                TextColor="White"
-                BackgroundColor="DodgerBlue"
                 Clicked="btnLogin_Clicked" />
         
     </StackLayout>
