@@ -5,13 +5,19 @@
 
     <StackLayout Margin="15"
                  VerticalOptions="Center">
-        <Entry Placeholder="Email" />
-        <Entry Placeholder="Password" />
+        
+        <Entry Placeholder="Email"
+               Keyboard="Email" />
+        
+        <Entry Placeholder="Password"
+               IsPassword="True" />
+        
         <Button x:Name="btnLogin"
                 Text="Login"
                 TextColor="White"
-                BackgroundColor="#284B63"
+                BackgroundColor="#3F84E5"
                 Clicked="btnLogin_Clicked" />
+        
     </StackLayout>
 
 </ContentPage>
