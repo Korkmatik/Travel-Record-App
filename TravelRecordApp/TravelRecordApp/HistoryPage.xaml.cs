@@ -30,8 +30,6 @@ namespace TravelRecordApp
             }
 
             postListView.ItemsSource = posts;
-
-            
         }
 
         private void postListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
