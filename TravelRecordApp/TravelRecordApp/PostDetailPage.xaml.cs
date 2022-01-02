@@ -22,11 +22,15 @@ namespace TravelRecordApp
             this.post = post;
 
             experienceEntry.Text = post.Experience;
+            latitudeEntry.Text = string.Format("{0}", post.Latitude);
+            longitudeEntry.Text = string.Format("{0}", post.Longitude);
         }
 
         private void updateButton_Clicked(object sender, EventArgs e)
         {
             post.Experience = experienceEntry.Text;
+            post.Latitude = double.Parse(latitudeEntry.Text);
+            post.Longitude = double.Parse(longitudeEntry.Text);
 
             int rows;
             using (SQLiteConnection connection = new SQLiteConnection(App.DatabaseLocation))

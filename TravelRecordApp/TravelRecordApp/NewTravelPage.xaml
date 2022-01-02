@@ -10,9 +10,15 @@
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20,20">
             <Entry x:Name="experienceEntry" 
                    Placeholder="Write your experience" />
+
+            <Entry x:Name="latitudeEntry"
+                   Placeholder="Latitude" />
+
+            <Entry x:Name="longitudeEntry"
+                   Placeholder="Longitude" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
