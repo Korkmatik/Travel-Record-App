@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TravelRecordApp.Logic;
 using TravelRecordApp.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -26,8 +25,6 @@ namespace TravelRecordApp
 
             var locator = CrossGeolocator.Current;
             var position = await locator.GetPositionAsync();
-
-            var venues = VenueLogic.GetVenuesAsync(position.Latitude, position.Longitude);
         }
 
         private void tiSave_Clicked(object sender, EventArgs e)
